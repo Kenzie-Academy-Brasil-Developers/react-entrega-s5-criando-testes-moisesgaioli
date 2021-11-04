@@ -49,7 +49,7 @@ export const LocateCepProvider = ({ children }: ILocationProps) => {
   const handleSearch = async () => {
     if (cepNumber.length === 8) {
       await api
-        .get(`${cepNumber}`)
+        .get(`/v1/cep/${cepNumber}`)
         .then((response) => setCeps(response.data))
         .catch((err) => toast.error("Ops! CEP não encontrado..."));
     } else {
