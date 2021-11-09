@@ -1,8 +1,8 @@
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react"
-import Search from "../../components/Search"
-import Providers from "../../providers";
-import api from "../../services"
+import Search from "../components/Search"
+import Providers from "../providers";
+import api from "../services"
 import MockAdapter from "axios-mock-adapter";
 
 

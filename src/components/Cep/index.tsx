@@ -16,8 +16,8 @@ const Address = () => {
               <Input fluid value={ceps.logradouro} />
             </Form.Field>
             <Form.Field inline>
-              <Header size="small">Número</Header>
-              <Input fluid />
+              <Header size="small" >Número</Header>
+              <Input fluid  name="number" />
               {ceps.complemento ? (
                 <Label basic color="red" pointing>
                   {ceps.complemento}
